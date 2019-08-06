@@ -1,8 +1,0 @@
-package binarysearch;
-
-public class Binary {
-	public static void main(String[] args) {
-		int []a = new int[] {1,2,4,6,8,9,10,
-	}
-
-}
