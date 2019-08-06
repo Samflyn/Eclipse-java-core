@@ -1,8 +1,8 @@
-package bubble;
+package insertion;
 
 import java.util.Scanner;
 
-public class Bubble {
+public class Insersion {
 
 	public static void main(String[] args) {
 		int [] a = new int[5];
@@ -15,12 +15,12 @@ public class Bubble {
 		}
 		for(i=0;i<a.length-1;i++)
 		{
-			for(j=0;j<a.length-1;j++)
+			for(j=i;j<a.length-1;j++)
 			{
-				if(a[j]>a[j+1])
+				if(a[i]>a[j+1])
 				{
-					temp=a[j];
-					a[j]=a[j+1];
+					temp=a[i];
+					a[i]=a[j+1];
 					a[j+1]=temp;
 				}
 			}
