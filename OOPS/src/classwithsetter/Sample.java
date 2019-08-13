@@ -6,28 +6,22 @@ public class Sample {
 	private char gender;
 	private int salary;
 	private String stream;
-	public void setEnpnum(int Empnum)
-	{
+	public void setEnpnum(int Empnum) {
 		empnum=Empnum;
 	}
-	public void setEmpname(String Empname)
-	{
+	public void setEmpname(String Empname) {
 		empname=Empname;
 	}
-	public void setGender(char Gender)
-	{
+	public void setGender(char Gender) {
 		gender=Gender;
 	}
-	public void setSalary(int Salary)
-	{
+	public void setSalary(int Salary) {
 		salary=Salary;
 	}
-	public void setStream(String Stream)
-	{
+	public void setStream(String Stream) {
 		stream=Stream;
 	}
-	public void display()
-	{
+	public void display() {
 		System.out.println("Rollnum: "+empnum+"\tName: "+empname+"\tGender: "+gender+"\tSalary: "+salary+"\tStream:"+stream);
 	}
 }

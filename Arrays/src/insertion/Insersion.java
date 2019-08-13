@@ -9,16 +9,12 @@ public class Insersion {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter 5 numbers : ");
 		int i,j = 0,temp = 0;
-		for(i=0;i<a.length;i++)
-		{
+		for(i=0;i<a.length;i++) {
 			a[i]=sc.nextInt();
 		}
-		for(i=0;i<a.length-1;i++)
-		{
-			for(j=i;j<a.length-1;j++)
-			{
-				if(a[i]>a[j+1])
-				{
+		for(i=0;i<a.length-1;i++) {
+			for(j=i;j<a.length-1;j++) {
+				if(a[i]>a[j+1]) {
 					temp=a[i];
 					a[i]=a[j+1];
 					a[j+1]=temp;

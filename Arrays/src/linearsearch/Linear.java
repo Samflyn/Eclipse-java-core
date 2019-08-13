@@ -10,17 +10,14 @@ public class Linear {
 		int num = sc.nextInt();
 		boolean flag = false;
 		int counter=0;
-		for(int i=0;i<a.length;i++)
-		{
-			if(num==a[i])
-			{
+		for(int i=0;i<a.length;i++) {
+			if(num==a[i]) {
 				flag = true;
 				System.out.println("Number forund at a["+i+"]");
 				counter++;
 			}
 		}
-		if(flag==false)
-		{
+		if(flag==false) {
 			System.out.println("Number not found");
 		}
 		System.out.println("No. of times found : "+counter);

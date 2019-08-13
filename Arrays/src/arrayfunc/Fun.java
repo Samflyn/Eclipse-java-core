@@ -9,8 +9,7 @@ public class Fun {
 		int i;
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter 5 numbers : ");
-		for(i=0;i<a.length;i++)
-		{
+		for(i=0;i<a.length;i++) {
 			a[i]=sc.nextInt();
 		}
 		Arrays.sort(a);

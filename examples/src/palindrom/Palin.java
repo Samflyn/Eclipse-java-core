@@ -9,22 +9,17 @@ public class Palin {
 		System.out.println("enter a number : ");
 		num = sc.nextInt();
 		temp=num;
-		while(num!=0)
-		{
+		while(num!=0) {
 			a=num%10;
 			rev=rev*10+a;
 			num=num/10;
-			 
 		}
-		if(temp==rev)
-		{
+		if(temp==rev) {
 			System.out.println("Palindrom");
 		}
-		else
-		{
+		else {
 			System.out.println("not palindrom");
 		}
 		sc.close();
 	}
-
 }

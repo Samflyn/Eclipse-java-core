@@ -10,16 +10,13 @@ public class FL {
 		int num = sc.nextInt();
 		a = num%10;
 		System.out.println("the last one : "+a);
-		while(num!=0)
-		{
+		while(num!=0) {
 			b=num%10;
 			num=num/10;
-			
 		}
 		System.out.println("the first digit : "+b);
 		c = a+b;
 		System.out.println("the sum = "+c);
 		sc.close();
 	}
-
 }

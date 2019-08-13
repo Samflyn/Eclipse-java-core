@@ -8,13 +8,11 @@ public class Fact {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("enter n value");
 		n = sc.nextInt();
-		while(n>=1)
-		{
+		while(n>=1) {
 			fact=fact*n;
 			n--;
 		}
 		System.out.println("fact "+fact);
 		sc.close();
 	}
-
 }

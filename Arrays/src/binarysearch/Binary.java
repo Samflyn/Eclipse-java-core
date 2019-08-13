@@ -11,29 +11,23 @@ public class Binary {
 		int l=0;
 		int h=a.length-1;
 		boolean flag=false;
-		while(l<h)
-		{
+		while(l<h) {
 			int m=(l+h)/2;
-			if(num==a[m])
-			{
+			if(num==a[m]) {
 				flag = true;
 				System.out.println("Number is at a["+m+"]");
 				break;
 			}
-			else if(num>a[m])
-			{
+			else if(num>a[m]) {
 				l=m+1;
 			}
-			else
-			{
+			else {
 				h=m-1;
 			}
 		}
-		if(flag==false)
-		{
+		if(flag==false) {
 			System.out.println("Number not found");
 		}
 		sc.close();
 	}
-
 }
