@@ -26,5 +26,4 @@ public class Linear {
 		System.out.println("No. of times found : "+counter);
 		sc.close();
 	}
-
 }

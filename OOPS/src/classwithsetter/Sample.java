@@ -1,14 +1,11 @@
-package employee;
+package classwithsetter;
 
 public class Sample {
-
 	private int empnum;
 	private String empname;
 	private char gender;
 	private int salary;
 	private String stream;
-	
-	
 	public void setEnpnum(int Empnum)
 	{
 		empnum=Empnum;
@@ -33,5 +30,4 @@ public class Sample {
 	{
 		System.out.println("Rollnum: "+empnum+"\tName: "+empname+"\tGender: "+gender+"\tSalary: "+salary+"\tStream:"+stream);
 	}
-
 }
