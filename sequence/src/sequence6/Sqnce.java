@@ -8,7 +8,7 @@ public class Sqnce {
 			for(int j=a;j<=5;j++) {
 				System.out.print(j+"\t");
 			}
-			a=--a;
+			--a;
 		}
 	}
 }

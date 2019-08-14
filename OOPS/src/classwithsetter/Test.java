@@ -7,7 +7,7 @@ public class Test {
 		employee.setEmpname("Sammy");
 		employee.setGender('M');
 		employee.setSalary(10000);
-		employee.setStream("sailotech");
+		employee.setStream("Sailotech");
 		employee.display();
 		employee.setSalary(20000);
 		employee.display();
