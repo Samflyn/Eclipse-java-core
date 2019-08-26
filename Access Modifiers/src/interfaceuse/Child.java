@@ -1,5 +1,5 @@
 package interfaceuse;
-// extends should be used befor implements.
+// extends should be used before implements.
 public class Child extends Parent implements Interface, Interface1 {
 	public void display() {
 		System.out.println("x = "+super.x+"\ty = "+super.y);
