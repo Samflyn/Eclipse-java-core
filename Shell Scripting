@@ -1,0 +1,89 @@
+#/bin/bash
+#To read data from keyboard
+
+echo "Enter something"
+read something  # data is stored in something variable
+echo $something # to print the data stored in variable
+
+# For multi line comments use :'lines' like below
+:'Operators
++ -> Addition
+- -> Subtraction
+\* -> Multiplication
+/ -> Division
+% -> Modulo
+
+-gt  -> Greater than
+-ge  -> Greater than or equal to
+-lt  -> Less than
+-le  -> Less than or equal to
+-eq  -> is equal to
+-ne  -> not equal to    (These operators return boolean value)
+
+-a  -> And
+-o  -> Or
+!   -> Not
+'
+
+#To perform mathematical operations `expr` is used
+echo "Enter two numbers"
+read a b
+c=$(expr $a + $b)
+echo "$c"
+
+#Statements
+#If-statement
+if [ $a -eq 0 ]; then
+  echo "A is equal to zero"
+  echo "Another statement"
+fi
+
+#If-else
+if [ $b -eq 0 ]; then
+  echo "B is equal to zero"
+else
+  echo "Something"
+fi
+
+#Ladder-If
+if [ $a -eq 1 ]; then
+  echo "A is equal to 1"
+elif [ $a -ne 2 ]; then
+  echo "Ais not equal to 1"
+fi
+
+#Case Statement
+echo enter two numbers
+read a
+read choice
+
+case $choice in
+1)
+  echo "You've selected option 1"
+  ;;
+2)
+  echo "you've selected option 2"
+  ;;
+3)
+  echo "You've selected option 3"
+  ;;
+*)
+  echo "Wrong option"
+  ;;
+esac
+
+#Loops
+#While loops
+while [[ condition ]]; do
+  #statements
+done
+
+#Until loop
+until [[ condition ]]; do
+  #statements
+done
+
+#For loop
+for ((i = 0; i < 10; i++)); do
+  #statements
+done
