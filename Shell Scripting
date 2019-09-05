@@ -1,4 +1,8 @@
-#/bin/bash
+#!/usr/bin/env zsh
+#!/usr/bin/env bash
+#The above line depends on the user shell used but many shells can
+#execute bash shell scripts
+
 #To read data from keyboard
 
 echo "Enter something"
@@ -87,3 +91,15 @@ done
 for ((i = 0; i < 10; i++)); do
   #statements
 done
+
+for variable in const1 const2 const3; do
+  #statements
+done
+
+#Functions
+function name(parameter) {
+  #statements
+}
+
+#parameters for Functions
+name parameter parameter1 parameter2
