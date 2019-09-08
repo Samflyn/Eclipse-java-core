@@ -18,6 +18,9 @@ public class Wrapper extends Object {
 		Wrapper ss =  new Wrapper();
 		System.out.println(ss);//here toString() executes.
 		//To get the values in ss toStringn() should be overridden.
+		String str = "01";
+		int i = Integer.parseInt(str);//to convert string to basic.
+		String str1 = String.valueOf(a);//to covert basic to String.
 	}
 	@Override
 	public String toString() {
