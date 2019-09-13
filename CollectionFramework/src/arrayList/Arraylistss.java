@@ -11,7 +11,7 @@ public class Arraylistss {
 		al.add("a nice");
 		al.add("place");
 		Iterator<String> itr = al.iterator();
-		while(itr.hasNext()) {
+		while (itr.hasNext()) {
 			System.out.println(itr.next());
 		}
 		ArrayList<String> al1 = (ArrayList<String>) al.clone();

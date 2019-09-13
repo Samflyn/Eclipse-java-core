@@ -1,4 +1,5 @@
 package polymorphism;
+
 // same method for different use in different classes.
 public class PolyTest {
 	public static void main(String[] args) {

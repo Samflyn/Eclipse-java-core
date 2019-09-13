@@ -5,7 +5,8 @@ public class PolyTestOther {
 		display(new Rectangle());
 		display(new Triangle());
 		display(new Square());
-}
+	}
+
 	public static void display(Interface x) {
 		x.display();
 	}

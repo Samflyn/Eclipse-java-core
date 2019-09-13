@@ -8,7 +8,7 @@ public class Test {
 		p1.display();
 		p2.setData(100, 200);
 		p2.display();
-		System.out.println(Interface.COMMOM); //for common variables
-		System.out.println(Interface1.COMMOM);//should be called by class name
+		System.out.println(Interface.COMMOM); // for common variables
+		System.out.println(Interface1.COMMOM);// should be called by class name
 	}
 }

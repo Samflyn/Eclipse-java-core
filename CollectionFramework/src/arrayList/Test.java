@@ -31,9 +31,10 @@ public class Test {
 		employee.setEmpGender(fields[3].charAt(0));
 		al.add(employee);
 		Iterator<Employee> itr = al.iterator();
-		while(itr.hasNext()) {
-			employee=itr.next();
-			System.out.println(employee.getEmpNum()+"\t"+employee.getEmpName()+"\t"+employee.getEmpSalary()+"\t"+employee.getEmpGender());
+		while (itr.hasNext()) {
+			employee = itr.next();
+			System.out.println(employee.getEmpNum() + "\t" + employee.getEmpName() + "\t" + employee.getEmpSalary()
+					+ "\t" + employee.getEmpGender());
 		}
 	}
 }

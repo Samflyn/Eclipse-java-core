@@ -9,15 +9,14 @@ public class Prime {
 		boolean flag = true;
 		System.out.println("enter a num");
 		num = sc.nextInt();
-		for(int i = 2;i<num;i++) {
-			if(num%i==0) {
-				flag=false;
+		for (int i = 2; i < num; i++) {
+			if (num % i == 0) {
+				flag = false;
 			}
 		}
-		if(flag==true) {
+		if (flag == true) {
 			System.out.println("prime");
-		}
-		else {
+		} else {
 			System.out.println("not");
 		}
 		sc.close();

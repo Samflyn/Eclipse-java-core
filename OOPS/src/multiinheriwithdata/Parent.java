@@ -2,12 +2,14 @@ package multiinheriwithdata;
 
 public class Parent {
 	int a;
-	int b;	
+	int b;
+
 	public void setData(int x, int y) {
-		a=x;
-		b=y;
+		a = x;
+		b = y;
 	}
+
 	public void display() {
-		System.out.println(a+"\t"+b);
+		System.out.println(a + "\t" + b);
 	}
 }

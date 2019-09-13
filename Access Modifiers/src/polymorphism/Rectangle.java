@@ -1,6 +1,6 @@
 package polymorphism;
 
-public class Rectangle implements Interface{
+public class Rectangle implements Interface {
 	@Override
 	public void display() {
 		// TODO Auto-generated method stub

@@ -16,6 +16,7 @@ public class Test2 {
 		System.out.println("enter a string");
 		String name = sc.next();
 		sc.close();
-		System.out.println("int : "+num1+"\nlong : "+num2+"\nfloat : "+flat1+"\ndouble : "+flat2+"\nstring : "+name);
+		System.out.println("int : " + num1 + "\nlong : " + num2 + "\nfloat : " + flat1 + "\ndouble : " + flat2
+				+ "\nstring : " + name);
 	}
 }

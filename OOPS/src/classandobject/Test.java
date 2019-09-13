@@ -8,7 +8,7 @@ public class Test {
 		s1.setData(10, 20);
 		s2.setData(30, 40);
 		s3.setData(50, 60);
-		
+
 		s1.Display();
 		s2.Display();
 		s3.Display();

@@ -2,7 +2,7 @@ package classwithsetter;
 
 public class Test {
 	public static void main(String[] args) {
-		Sample employee=new Sample();
+		Sample employee = new Sample();
 		employee.setEnpnum(1);
 		employee.setEmpname("Sammy");
 		employee.setGender('M');

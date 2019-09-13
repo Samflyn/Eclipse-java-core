@@ -10,7 +10,7 @@ public class TestD {
 		db.setDbUid("admin");
 		db.setDbPasswd("passwordwithcaps");
 		db.display();
-		System.out.println("Current user : "+db.getDbName());
-		System.out.println("Server location : "+db.getDbHost());
+		System.out.println("Current user : " + db.getDbName());
+		System.out.println("Server location : " + db.getDbHost());
 	}
 }
