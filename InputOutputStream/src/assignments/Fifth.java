@@ -164,10 +164,10 @@ public class Fifth {
 				sum111 = sum111 + Integer.parseInt(al1111.get(i));
 			}
 			int avg111 = sum111 / al1111.size();
-			String str = new String("====================================EMP RECORDS================================");
+			String str = new String("==================================EMP RECORDS==================================");
 			String str1 = new String("===============================================================================");
-			String str2 = new String(
-					"Dept \t" + "Total \t" + "Male \t" + "Female \t" + "Max \t" + "Min \t" + "Avg \t" + "CTC");
+			String str2 = new String("Dept \t" + "Total Emp\t" + "Male Emp\t" + "Female Emp\t" + "Max Sal\t"
+					+ "Min Sal\t" + "Avg Sal\t" + "CTC");
 			String str3 = new String("===============================================================================");
 			String str4 = new String(al.get(0) + "\t" + (mcounter + fcounter) + "\t" + mcounter + "\t" + fcounter + "\t"
 					+ al1.get(al1.size() - 1) + "\t" + al1.get(0) + "\t" + avg + "\t" + (mcounter + fcounter) * avg);
