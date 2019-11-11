@@ -76,7 +76,7 @@ class Consumer implements Runnable {
 }
 
 public class PCTest {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		Test t = new Test();
 		new Producer(t);
 		new Consumer(t);
