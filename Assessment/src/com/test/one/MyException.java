@@ -5,7 +5,7 @@ public class MyException extends Exception {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	String message;
+	private String message;
 
 	public MyException(String string) {
 		message = string;
