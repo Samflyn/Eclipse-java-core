@@ -4,9 +4,9 @@ import java.io.DataInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.TreeSet;
 
 public class Ten {
 	public static void main(String[] args) throws IOException {
@@ -15,8 +15,8 @@ public class Ten {
 		FileInputStream fis = null;
 		DataInputStream dis = null;
 		StringBuffer sb = new StringBuffer();
-		TreeSet<String> ts = new TreeSet<String>();
-		Map<String, Integer> mp=new HashMap<String, Integer>();
+		ArrayList<String> al = new ArrayList<String>();
+		Map<String, Integer> mp = new HashMap<String, Integer>();
 		try {
 			file = new File(args[0]);
 			fis = new FileInputStream(file);
@@ -28,18 +28,23 @@ public class Ten {
 				line = dis.readLine();
 			}
 			String[] split = sb.toString().split(" ");
-			for(int j=0;j<split.length;j++) {
-				ts.add(split[j]);
+			for (int j = 0; j < split.length; j++) {
+				al.add(split[j]);
 			}
-			for (int i = 0; i < split.length; i++) {
-				for (int j = i + 1; j < split.length; j++) {
-					if (split[i].equals(split[j])) {
-						
+			int counter = 1;
+			for (int i = 0; i < al.size(); i++) {
+				for (int j = i + 1; j < al.size(); j++) {
+					if (al.get(i).equals(al.get(j))) {
+						counter++;
 					}
 				}
+				if (!mp.containsKey(al.get(i))) {
+					mp.put(al.get(i), counter);
+				}
+				counter = 1;
 			}
-			System.out.println("Distinct words are : ");
-			System.out.println(ts);
+			System.out.println("Maximum no. words are : ");
+			System.out.println(mp);
 			dis.close();
 			fis.close();
 		} catch (Exception e) {
